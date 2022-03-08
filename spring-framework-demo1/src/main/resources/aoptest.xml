@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册bean-->
+    <bean id="userSevice" class="org.xjt.myAop.UserSeviceImpl"/>
+    <bean id="afterLog" class="org.xjt.myAop.AfterLog"/>
+    <bean id="beforeLog" class="org.xjt.myAop.BeforeLog"/>
+
+    <!--配置aop-->
+    <aop:config>
+        <!--切入点-->
+        <aop:pointcut id="mypointcut" expression="execution(* org.xjt.myAop.UserSeviceImpl.*(..))"/>
+        <!--增强-->
+        <aop:advisor pointcut-ref="mypointcut" advice-ref="beforeLog"/>
+        <aop:advisor pointcut-ref="mypointcut" advice-ref="afterLog"/>
+    </aop:config>
+</beans>

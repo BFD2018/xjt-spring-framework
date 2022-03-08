@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="org.xjt.di.domain.Address">
+        <property name="addr" value="shenzhen"></property>
+    </bean>
+
+    <bean id="student" class="org.xjt.di.domain.Student">
+        <property name="name" value="xiong"></property>
+        <property name="address" ref="address"></property>
+        <property name="books">
+            <array>
+                <value>语文</value>
+                <value>数学</value>
+                <value>英语</value>
+            </array>
+        </property>
+        <property name="hobbys">
+            <list>
+                <value>足球</value>
+                <value>篮球</value>
+                <value>羽毛球</value>
+            </list>
+        </property>
+        <property name="score">
+            <map>
+                <entry key="chinese" value="86"/>
+                <entry key="math" value="96"/>
+                <entry key="english" value="88"/>
+            </map>
+        </property>
+
+        <property name="games">
+            <set>
+                <value>三国杀</value>
+                <value>街头霸王</value>
+                <value>魂斗罗</value>
+            </set>
+        </property>
+        <property name="wife">
+            <null></null>
+        </property>
+        <property name="info">
+            <props>
+                <prop key="学号">2018112233</prop>
+                <prop key="班级">机械3班</prop>
+                <prop key="性别">男</prop>
+            </props>
+        </property>
+     </bean>
+</beans>
