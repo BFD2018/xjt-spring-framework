@@ -20,6 +20,21 @@ class Student extends Person {
         System.out.println(this.math);
     }
 
+    @Override
+    public void run() {
+        super.run();
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
     public void study() {
         this.test();
     }
