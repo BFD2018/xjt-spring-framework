@@ -20,7 +20,7 @@
   <modules>
     <module>spring-framework-demo1</module>
     <module>tuling-zhouyu</module>
-      <module>javase</module>
+    <module>javase</module>
   </modules>
 
   <dependencies>

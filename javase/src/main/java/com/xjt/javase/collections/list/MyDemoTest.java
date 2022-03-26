@@ -1,4 +1,4 @@
-package com.xjt.javase.collection;
+package com.xjt.javase.collections.list;
 
 import org.junit.Test;
 

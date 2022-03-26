@@ -1,10 +1,9 @@
-package com.xjt.javase.collection;
+package com.xjt.javase.collections.list;
 
-import com.alibaba.fastjson.JSONObject;
-import com.xjt.javase.collection.domain.Dog;
-import com.xjt.javase.collection.domain.Job;
-import com.xjt.javase.collection.domain.Skill;
-import com.xjt.javase.collection.domain.Student;
+import com.xjt.javase.collections.list.domain.Dog;
+import com.xjt.javase.collections.list.domain.Job;
+import com.xjt.javase.collections.list.domain.Skill;
+import com.xjt.javase.collections.list.domain.Student;
 import org.apache.commons.lang.SerializationUtils;
 import org.junit.Test;
 

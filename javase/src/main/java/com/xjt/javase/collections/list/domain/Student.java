@@ -1,4 +1,4 @@
-package com.xjt.javase.collection.domain;
+package com.xjt.javase.collections.list.domain;
 
 public class Student implements Cloneable{
     private String name;
